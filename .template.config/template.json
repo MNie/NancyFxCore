@@ -1,0 +1,11 @@
+{
+    "author": "Michał Niegrzybowski",
+    "classifications": [ "Web" ],
+    "name": "NancyFx F# .net core Template",
+    "identity": "NancyFx.Core.Template",        
+    "shortName": "nancyfx",              
+    "tags": {
+        "language": "F#"                
+    },
+    "sourceName": "NancyCore"
+}
