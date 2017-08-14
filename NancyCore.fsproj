@@ -1,0 +1,24 @@
+﻿<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Startup.fs" />
+    <Compile Include="HomeModule.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="4.1.*" />
+    <PackageReference Include="FSharp.NET.Sdk" Version="1.0.*" PrivateAssets="All" />
+    <PackageReference Include="Nancy" Version="2.0.0-*"/>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.*"/>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.*"/>
+    <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.*"/>
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.*"/>
+  </ItemGroup>
+
+</Project>
