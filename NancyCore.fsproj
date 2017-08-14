@@ -20,5 +20,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.*"/>
     <PackageReference Include="Microsoft.AspNetCore" Version="1.*"/>
   </ItemGroup>
-
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
+  </ItemGroup> 
 </Project>
