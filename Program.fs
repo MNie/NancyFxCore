@@ -1,20 +1,18 @@
 ﻿namespace NancyCore.Web
     module Main =
-    open System
-    open System.IO
-    open Nancy
-    open Microsoft.AspNetCore.Hosting
-    open NancyCore.Web.Config
+        open System.IO
+        open Microsoft.AspNetCore.Hosting
+        open NancyCore.Web.Config
 
 
-    [<EntryPoint>]
-    let main argv =
-        let host = 
-            WebHostBuilder()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseKestrel()
-                .UseStartup<Startup>()
-                .Build()
+        [<EntryPoint>]
+        let main _ =
+            let host = 
+                WebHostBuilder()
+                    .UseContentRoot(Directory.GetCurrentDirectory())
+                    .UseKestrel()
+                    .UseStartup<Startup>()
+                    .Build()
 
-        host.Run()
-        0
+            host.Run()
+            0
