@@ -1,9 +1,8 @@
+dist: bionic
 language: csharp
-dist: trusty
-sudo: required
 mono: none
-dotnet: 2.0.0
-before_install:
-  - chmod +x build.sh
+dotnet: 3.0
+sudo: required
+
 script:
   - ./build.sh --quiet verify
